@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Event Categories</th>
+    </tr>
+    </thead>
+    <tr th:each="eventCategory : ${eventCategories}">
+        <td th:text="${eventCategory.name}"></td>
+    </tr>
+</table>
 
 </body>
 </html>
